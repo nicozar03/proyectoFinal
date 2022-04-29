@@ -1,0 +1,23 @@
+{
+  "name": "proyectoFinal",
+  "version": "1.0.0",
+  "description": "mmm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://oauth2: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@github.com/nicozar03/proyectoFinal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicozar03/proyectoFinal/issues"
+  },
+  "homepage": "https://github.com/nicozar03/proyectoFinal#readme",
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
