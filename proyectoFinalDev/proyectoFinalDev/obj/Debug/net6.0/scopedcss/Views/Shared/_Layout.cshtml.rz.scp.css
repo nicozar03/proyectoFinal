@@ -50,3 +50,13 @@ button.accept-policy[b-w8eu3m48jx] {
 .navbar[b-w8eu3m48jx]{
   background-color:#1190CB;
 }
+.nav-link.active[b-w8eu3m48jx]{
+  text-align: center;
+  color:red;
+}
+
+
+.nav-link:hover[b-w8eu3m48jx] {
+  color: red;
+  z-index: 1;
+}

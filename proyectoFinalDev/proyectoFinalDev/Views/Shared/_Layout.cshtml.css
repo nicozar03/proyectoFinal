@@ -50,3 +50,13 @@ button.accept-policy {
 .navbar{
   background-color:#1190CB;
 }
+.nav-link.active{
+  text-align: center;
+  color:red;
+}
+
+
+.nav-link:hover {
+  color: red;
+  z-index: 1;
+}

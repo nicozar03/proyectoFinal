@@ -1,1 +1,26 @@
-<h1>s<h1>
+<h1>Contacto</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-2"></div>
+      <div class="col-8">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Nombre</label><br>
+          <input type="text" class="form-control" id="titulo" placeholder="Por favor ingrese el nombre de la película (requerido)" required><br>
+          <label for="exampleFormControlInput2">Año</label><br>
+          <input type="number" class="form-control" id="anio" placeholder="Ingrese el año de la película (opcional)"><br>
+          <label for="exampleFormControlSelect1">Tipo</label><br>
+          <select class="form-control" id="tipoBusqueda"><br>
+            <option value="" disabled selected hidden>Ingrese el tipo de contenido de su busqueda (opcional)</option>
+            <option value="movie">Pelicula</option>
+            <option value="series">Serie</option>
+            <option value="episode">Episodio</option>
+            <option value="game">Juego</option>
+          </select>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="button">
+    <input type="button" onclick="Buscar()" class="btn mt-4" id="btn" value="Enviar">
+  </div>
