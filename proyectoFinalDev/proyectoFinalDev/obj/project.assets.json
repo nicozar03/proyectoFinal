@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\devandroid\\.nuget\\packages\\": {}
+    "C:\\Users\\46028576\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\devandroid\\desktop\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
+      "projectUniqueName": "C:\\Users\\46028576\\Desktop\\finalProyect\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
       "projectName": "proyectoFinalDev",
-      "projectPath": "C:\\Users\\devandroid\\desktop\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
-      "packagesPath": "C:\\Users\\devandroid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\devandroid\\desktop\\proyectoFinalDev\\proyectoFinalDev\\obj\\",
+      "projectPath": "C:\\Users\\46028576\\Desktop\\finalProyect\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
+      "packagesPath": "C:\\Users\\46028576\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\46028576\\Desktop\\finalProyect\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\devandroid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\46028576\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,6 +1,12 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using proyectoFinalDev.Models;
+
 
 namespace proyectoFinalDev.Controllers;
 
@@ -14,6 +20,26 @@ public class HomeController : Controller
     }
 
     public IActionResult Index()
+    {
+        return View();
+    }
+      public IActionResult productos()
+    {
+        return View();
+    }
+      public IActionResult insumosComputacion()
+    {
+        return View();
+    }
+      public IActionResult libreriaTecnica()
+    {
+        return View();
+    }
+        public IActionResult FAQ()
+    {
+        return View();
+    }
+        public IActionResult contacto()
     {
         return View();
     }
