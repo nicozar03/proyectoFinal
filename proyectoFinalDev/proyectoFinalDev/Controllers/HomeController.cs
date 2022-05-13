@@ -21,6 +21,11 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        /*List<Productos> ListaProductos = new List <Productos>();
+            int i=-1;
+            ListaProductos = BD.ListarProductos(i);
+            ViewBag.Productos=ListaProductos;
+            */
         return View();
     }
       public IActionResult productos()
