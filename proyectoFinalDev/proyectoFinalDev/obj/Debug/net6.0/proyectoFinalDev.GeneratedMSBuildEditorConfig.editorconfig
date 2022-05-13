@@ -15,12 +15,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\46028576\Desktop\finalProyect\proyectoFinal\proyectoFinalDev\proyectoFinalDev
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/46028576/Desktop/finalProyect/proyectoFinal/proyectoFinalDev/proyectoFinalDev/Views/Home/contacto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb250YWN0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/46028576/Desktop/finalProyect/proyectoFinal/proyectoFinalDev/proyectoFinalDev/Views/Home/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGQVEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/46028576/Desktop/finalProyect/proyectoFinal/proyectoFinalDev/proyectoFinalDev/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/46028576/Desktop/finalProyect/proyectoFinal/proyectoFinalDev/proyectoFinalDev/Views/Home/insumosComputacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbnN1bW9zQ29tcHV0YWNpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/46028576/Desktop/finalProyect/proyectoFinal/proyectoFinalDev/proyectoFinalDev/Views/Home/libreriaTecnica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsaWJyZXJpYVRlY25pY2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/46028576/Desktop/finalProyect/proyectoFinal/proyectoFinalDev/proyectoFinalDev/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/46028576/Desktop/finalProyect/proyectoFinal/proyectoFinalDev/proyectoFinalDev/Views/Home/productos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwcm9kdWN0b3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/46028576/Desktop/finalProyect/proyectoFinal/proyectoFinalDev/proyectoFinalDev/Views/Shared/Error.cshtml]
