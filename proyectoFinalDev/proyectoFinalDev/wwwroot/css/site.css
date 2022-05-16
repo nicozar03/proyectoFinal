@@ -87,12 +87,12 @@ h1{
 }
 
 .text-secondary {
-  color: #3d5d6f;
+  color: black;
 }
 
 .h4,
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 h2 {
@@ -102,7 +102,7 @@ h2 {
 .fa,
 .fas {
   font-family: 'FontAwesome';
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.2rem;
   font-style: normal;
 }
@@ -122,7 +122,7 @@ h2 {
 a.text-secondary:focus,
 a.text-secondary:hover {
   text-decoration: none;
-  color: #22343e;
+  color: #1861ac;
 }
 
 #accordion .fa-plus {
