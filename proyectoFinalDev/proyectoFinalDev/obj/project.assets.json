@@ -482,19 +482,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\46028576\\.nuget\\packages\\": {}
+    "C:\\Users\\devandroid\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\46028576\\Desktop\\finalProyect\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
+      "projectUniqueName": "C:\\Users\\devandroid\\Desktop\\asd\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
       "projectName": "proyectoFinalDev",
-      "projectPath": "C:\\Users\\46028576\\Desktop\\finalProyect\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
-      "packagesPath": "C:\\Users\\46028576\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\46028576\\Desktop\\finalProyect\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\obj\\",
+      "projectPath": "C:\\Users\\devandroid\\Desktop\\asd\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
+      "packagesPath": "C:\\Users\\devandroid\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\devandroid\\Desktop\\asd\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\46028576\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\devandroid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
