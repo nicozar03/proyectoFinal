@@ -45,5 +45,36 @@
     <h3><b>Productos Destacados</b></h3>
 </div>
 
-gg
+@{
+                  foreach(Producto producto in @ViewBag.Producto){
+                    <div class="col-12 col-md-3">
+                                  <h5 class="filtros">@producto.nombre</h5>
+                                  <h5 class="filtros">$@producto.precio</h5>
+                     
+                    </div>
+                  }   
+            }   
+</div>
+<div style ="margin-top: 0.3vh;">
+						&nbsp;
+				</div>
+
+         <div class="row">
+        @{
+                  foreach(Producto productos in @ViewBag.producto){
+                    <div class="col-12 col-md-4">
+                    <div class="card">
+                      <img class="img-card" src="@productos.foto" alt="@productos.foto">
+                      <div class="card-body">
+                        <h5 class="card-title">@productos.nombre</h5>
+                        <
+                       
+                      </div>
+                    </div>
+                    </div>
+                    
+                  }   
+        }               
+      </div>
+
 

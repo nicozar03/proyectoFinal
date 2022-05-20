@@ -9,7 +9,7 @@ namespace proyectoFinalDev.Models
 {
     public static class BD
     {   
-        private static string _connectionString = @"Server=A-AMI-10\SQLEXPRESS; DataBase=BDWebCursos; Trusted_Connection=True;";
+        private static string _connectionString = @"Server=A-BTA-13; DataBase=papeleraVipDatabase;Integrated Security=false; Trusted_Connection=True;";
 
         private static List<Producto> _ListaProducto = new List<Producto> ();
        // private static List<Especialidad> _ListaEspecialidad = new List<Especialidad> ();
@@ -17,7 +17,7 @@ namespace proyectoFinalDev.Models
         public static List<Producto> ListaProductosDestacados(){
             List<Producto> ListaProductosDestacados = new List<Producto> ();
             using(SqlConnection db = new SqlConnection(_connectionString)){
-                string sql="SELECT * from productos WHERE destacado = true";
+                string sql="SELECT * from productos WHERE destacado = 1";
                 ListaProductosDestacados = db.Query<Producto>(sql).ToList();
             }
             return ListaProductosDestacados;
