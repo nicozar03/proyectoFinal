@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\devandroid\\Desktop\\asd\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
+      "projectUniqueName": "C:\\Users\\devandroid\\Desktop\\proyecto\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
       "projectName": "proyectoFinalDev",
-      "projectPath": "C:\\Users\\devandroid\\Desktop\\asd\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
+      "projectPath": "C:\\Users\\devandroid\\Desktop\\proyecto\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
       "packagesPath": "C:\\Users\\devandroid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\devandroid\\Desktop\\asd\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\obj\\",
+      "outputPath": "C:\\Users\\devandroid\\Desktop\\proyecto\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\devandroid\\AppData\\Roaming\\NuGet\\NuGet.Config",
