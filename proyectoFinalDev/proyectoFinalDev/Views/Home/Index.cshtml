@@ -1,9 +1,9 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Vip Papelera";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Bienvenido a Vip Papelera</h1>
 </div>
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -40,36 +40,30 @@
   </a>
 </div>
 
-
+<br>
 <div class="text-center">
     <h3><b>Productos Destacados</b></h3>
 </div>
 
-@{
-                  foreach(Producto producto in @ViewBag.Producto){
-                    <div class="col-12 col-md-3">
-                                  <h5 class="filtros">@producto.nombre</h5>
-                                  <h5 class="filtros">$@producto.precio</h5>
-                     
-                    </div>
-                  }   
-            }   
-</div>
-<div style ="margin-top: 0.3vh;">
+    <div style ="margin-top: 0.3vh;">
 						&nbsp;
-				</div>
+		</div>
 
          <div class="row">
         @{
                   foreach(Producto productos in @ViewBag.producto){
                     <div class="col-12 col-md-4">
+                      
                     <div class="card">
+                    <div class="center">
                       <img class="img-card" src="@productos.foto" alt="@productos.foto">
-                      <div class="card-body">
-                        <h5 class="card-title">@productos.nombre</h5>
-                        <h5 class=
-                       
                       </div>
+                      <div class="card-body">
+                        <h5 class="data">Nombre: &ensp; @productos.nombre</h5>
+                        <h5 class="data"> Precio: &ensp; $@productos.precio </h5>
+                        
+
+                        </div>
                     </div>
                     </div>
                     

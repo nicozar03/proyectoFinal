@@ -135,3 +135,15 @@ a.text-secondary:hover {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.img-card{
+  height: 60%;
+  width: 60%;
+}
+.card{
+  background-color: #ddd;
+}
+
+.data{
+  font-weight: 640;
+}
