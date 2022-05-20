@@ -59,8 +59,12 @@
                       <img class="img-card" src="@productos.foto" alt="@productos.foto">
                       </div>
                       <div class="card-body">
-                        <h5 class="data">Nombre: &ensp; @productos.nombre</h5>
-                        <h5 class="data"> Precio: &ensp; $@productos.precio </h5>
+                        <h5> <div class="data">Nombre:</div> &ensp; @productos.nombre</h5>
+                        <h5><div class="data">Precio:</div> &ensp; $@productos.precio </h5>
+                          <div class="button">
+                              <input type="button" onclick="Buscar()" class="btn mt-4" id="btn" value="VER +">
+                              <input type="button" onclick="Buscar()" class="btn mt-4" id="btnbuy" value="Comprar">
+                          </div>
                         
 
                         </div>
