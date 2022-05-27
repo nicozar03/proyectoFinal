@@ -9,7 +9,7 @@ namespace proyectoFinalDev.Models
 {
     public static class BD
     {   
-        private static string _connectionString = @"Server=DESKTOP-8625DBK\SQLEXPRESS; DataBase=papeleraVipDatabase; Trusted_Connection=True;";
+        private static string _connectionString =  @"Server=A-BTA-13; DataBase=papeleraVipDatabase;Integrated Security=false; Trusted_Connection=True;";
 
         private static List<Producto> _ListaProducto = new List<Producto> ();
        // private static List<Especialidad> _ListaEspecialidad = new List<Especialidad> ();
@@ -23,15 +23,15 @@ namespace proyectoFinalDev.Models
             return ListaProductosDestacados;
         }
 
-      /*   public static Producto ConsultaProductoDestacado(){
-            Producto UnCurso = null;
+       public static Producto ConsultaProducto(int idProducto){
+            Producto UnProducto = null;
             using(SqlConnection db = new SqlConnection(_connectionString)){
-                string sql="SELECT * from Cursos WHERE IdCurso = @pIdCurso";
-                UnCurso = db.QueryFirstOrDefault<Curso>(sql, new{pIdCurso = IdCurso});
+                string sql="SELECT * from productos WHERE idProducto = @pidProducto";
+                UnProducto = db.QueryFirstOrDefault<Producto>(sql, new{pidProducto = idProducto});
             }
-            return UnCurso;
+            return UnProducto;
         }
-*/
+
         /*public static Especialidad ConsultaEspecialidad(int IdEspecialidad){
             Especialidad UnaEspecialidad = null;
             using(SqlConnection db = new SqlConnection(_connectionString)){

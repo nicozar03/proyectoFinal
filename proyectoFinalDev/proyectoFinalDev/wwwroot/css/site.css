@@ -222,6 +222,6 @@ a.text-secondary:hover {
 }
 
 .img-fluid{
-width: 30vh;
-height: 30vh;
+padding: 8px;
+max-width:48%;
 }

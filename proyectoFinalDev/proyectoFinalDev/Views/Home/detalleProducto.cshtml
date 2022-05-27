@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "DetalleProducto";
+}
+<h1>Información del producto:</h1>
+
+<div class="row">
+
+  <div class="col-2 col-md-2">
+			&nbsp;
+		</div>	
+      <div class="col-8">
+                          <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-12 col-md-12">
+                                 <img class='img-fluid detalle' src='@ViewBag.Producto.foto' alt="">
+                                </div>
+                              <div class="col-12 col-md-12">
+                              <div class="card-body">
+                                <h4 class="card-title"><strong>@ViewBag.Producto.nombre</strong></h4>
+                                <h5 class="card-text text-dark"><strong>Caracteristicas:</strong></h5>
+                                <ul>
+                                    <li>
+                                       <h6 class="card-text text-dark"> <strong>Descripcion:</strong> @ViewBag.Producto.descripcion </h6>
+                                    </li>
+                                     <li>
+                                       <h6 class="card-text text-dark"> <strong>marca:</strong> @ViewBag.Producto.marca </h6>
+                                    </li>
+                                      <li>
+                                       <h6 class="card-text text-dark"> <strong>precio</strong> @ViewBag.Producto.precio </h6>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+                                        
+

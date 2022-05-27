@@ -28,9 +28,15 @@ public class HomeController : Controller
            
         return View();
     }
-      public IActionResult productos()
+      public IActionResult productos(int idProducto, string descripcion, string nombre)
     {
-        return View();
+        Producto producto;
+        producto=BD.ConsultaProducto(idProducto);
+        ViewBag.Producto=producto;
+        ViewBag.Producto.descripcion=descripcion;
+        ViewBag.Producto.nombre=nombre;
+
+        return View("detalleProducto");
     }
       public IActionResult insumosComputacion()
     {
