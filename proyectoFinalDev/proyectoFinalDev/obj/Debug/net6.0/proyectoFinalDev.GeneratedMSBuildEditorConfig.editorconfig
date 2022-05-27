@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\devandroid\Desktop\proyectoFinal\proyectoFinal\proyectoFinalDev\proyectoFinalDev
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/devandroid/Desktop/proyectoFinal/proyectoFinal/proyectoFinalDev/proyectoFinalDev/Views/Home/carrito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjYXJyaXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/devandroid/Desktop/proyectoFinal/proyectoFinal/proyectoFinalDev/proyectoFinalDev/Views/Home/contacto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb250YWN0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

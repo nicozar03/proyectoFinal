@@ -28,7 +28,7 @@ public class HomeController : Controller
            
         return View();
     }
-      public IActionResult productos(int idProducto, string descripcion, string nombre)
+      public IActionResult detalleProductos(int idProducto, string descripcion, string nombre)
     {
         Producto producto;
         producto=BD.ConsultaProducto(idProducto);
@@ -37,6 +37,10 @@ public class HomeController : Controller
         ViewBag.Producto.nombre=nombre;
 
         return View("detalleProducto");
+    }
+    public IActionResult productos()
+    {
+        return View();
     }
       public IActionResult insumosComputacion()
     {
@@ -56,6 +60,10 @@ public class HomeController : Controller
     }
 
     public IActionResult Privacy()
+    {
+        return View();
+    }
+    public IActionResult carrito()
     {
         return View();
     }

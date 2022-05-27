@@ -15,14 +15,14 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-#1190CB border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-md navbar-dark bg-#1190CB border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="true" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
@@ -44,7 +44,7 @@
                         </li>           
                                                           
                     </ul>
-                    <button style="background-color:#1190CB; border:none;"> <i class="fa fa-shopping-cart" style= "font-size:36px;color:white"></i></button>
+                    <button style="background-color:#1190CB; border:none;"> <a class="nav-link" asp-area="" asp-controller="Home" asp-action="carrito"><i class="fa fa-shopping-cart" style= "font-size:36px;color:white"></i></a> </button>
                    
                 </div>
             </div>
