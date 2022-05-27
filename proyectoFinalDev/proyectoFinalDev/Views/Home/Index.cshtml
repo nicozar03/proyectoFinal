@@ -65,7 +65,7 @@
                         <h5><div class="data">Precio:</div> &ensp; $@productos.precio </h5>
                           <div class="button">
                               <a href='@Url.Action("detalleProductos","Home", new{idProducto = productos.idProducto, nombre = productos.nombre, descripcion = productos.descripcion})' class="btn mt-6" id="btn"><span>MÁS INFORMACIÓN</span></a>
-                              <input type="button" onclick="Buscar()" class="btn mt-6" id="btnbuy" value="Comprar">
+                              <a href='@Url.Action("carrito","Home", new{idProducto = productos.idProducto, nombre = productos.nombre, precio = productos.precio})' class="btn mt-6" id="btnbuy"><span>COMPRAR</span></a>
                           </div>
                         
 
