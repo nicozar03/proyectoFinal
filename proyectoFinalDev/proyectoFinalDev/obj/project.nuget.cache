@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OG0PoIzxgE5FRoTwWZ0tskbtrOn41HtOt83Wrta9Ph30X2hJXh9k9Z4B2DdiD1vxeMbz0WMM1jTUrG08hLZV9g==",
+  "dgSpecHash": "+AJc+jKhbNG2EEnsohxMR6P+gyLKSElami6119p3uGsSbmMaL43OcGAP6GICADHEwTlEpBO7Upls1QkvO3sipg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\devandroid\\Desktop\\proyectoFinal\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
+  "projectFilePath": "C:\\Users\\devandroid\\Desktop\\PROYECTO\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\devandroid\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\devandroid\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
