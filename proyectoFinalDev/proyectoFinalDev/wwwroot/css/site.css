@@ -232,13 +232,11 @@ max-width:100%;
 
 .product-image {
 	transition: all 0.3s ease-out;
-	display: inline-block;
 	position: relative;
 	overflow: hidden;
 	height: 100%;
-	float: right;
 	width: 45%;
-	display: inline-block;
+
 }
 
 #container img {width: 100%;height: 100%;}
@@ -251,16 +249,16 @@ li{
 .data-card {
   display: flex;
   flex-direction: column;
-  max-width: 20.75em;
-  min-height: 20.75em;
+  max-width: 30.75em;
+  min-height: 30.75em;
   overflow: hidden;
   border-radius: 0.5em;
   text-decoration: none;
   background: white;
-  margin: 1em;
   padding: 2.75em 2.5em;
   box-shadow: 0 1.5em 2.5em -0.5em rgba(0, 0, 0, .1);
   transition: transform 0.45s ease, background 0.45s ease;
+  margin: 10px auto;
 }
 .data-card h3 {
   color: #2e3c40;
@@ -271,28 +269,11 @@ li{
   margin: 0 0 0.142857143em;
   border-bottom: 2px solid #753bbd;
   transition: color 0.45s ease, border 0.45s ease;
+  display: flex;
+	justify-content: center;
+  align-items: center;
 }
-.data-card h4 {
-  color: #627084;
-  text-transform: uppercase;
-  font-size: 1.125em;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.1em;
-  margin: 0 0 1.777777778em;
-  transition: color 0.45s ease;
-}
-.data-card h5 {
-  color: #627084;
-  text-transform: uppercase;
-  font-size: 1.125em;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.1em;
-  margin: 0 0 1.777777778em;
-  transition: color 0.45s ease;
-}
-.data-card h6 {
+.data-card h4, h5, h6 {
   color: #627084;
   text-transform: uppercase;
   font-size: 1.125em;
