@@ -2,6 +2,7 @@
     ViewData["Title"] = "Carrito";
 }
 <h1>Visits:@ViewBag.visits </h1>
+<h1>Despues Visits:@ViewBag.visits2 </h1>
 
 @foreach (Producto item in ViewBag.Carrito.ListarProductos())
 {
@@ -10,3 +11,5 @@
 }
 
 <a href='@Url.Action("AgregarProducto","Home")'>Agregar Producto</a>
+
+<a href='@Url.Action("VerSesion","Home")'>Que tiene la sesion?</a>

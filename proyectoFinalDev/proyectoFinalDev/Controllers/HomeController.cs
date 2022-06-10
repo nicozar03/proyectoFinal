@@ -69,15 +69,14 @@ public class HomeController : Controller
     }
     public IActionResult carrito()
     {
-        var visitString =   Request.Cookies["visits"];
         Carrito MiCarrito = new Carrito();
         ViewBag.Carrito = MiCarrito;
         MiCarrito.Fecha = DateTime.Now;
 
         
         string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
-        Response.Cookies.Append("Carrito",MiCarritoString);
-       
+        HttpContext.Session.SetString("Carrito", MiCarritoString);
+        ViewBag.visits = HttpContext.Session.GetString("Carrito");
        /* Carrito MiCarrito = Request.Cookies["Carrito"];
 
         if (MiCarrito==null)
@@ -86,31 +85,38 @@ public class HomeController : Controller
         }
         */
         int visits = 0 ;
-        int.TryParse(visitString, out visits);
+        int.TryParse(visits.ToString(), out visits);
         visits++;
         CookieOptions options = new CookieOptions();
         options.Expires = DateTime.Now.AddDays(7);
 
         Response.Cookies.Append("visits",visits.ToString(), options);
 
-        ViewBag.visits = visits;
         return View();
     }
 
+    public IActionResult VerSesion()
+    {
+
+        ViewBag.visits = HttpContext.Session.GetString("Carrito");
+        ViewBag.Carrito = new Carrito();
+        return View("Carrito");
+    }
     public IActionResult AgregarProducto()
     {
-        var visitString =   Request.Cookies["Carrito"];
+        var visitString =   HttpContext.Session.GetString("Carrito");
         Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(visitString);
+
         MiCarrito.AgregarProducto(new Producto(1,"Papa","DescPApa","foto","Ford",10,10,true));
 
-
-
+        
         string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
 
-        if (Request.Cookies["Carrito"] != null)
-        {
-            
-        }
+        ViewBag.visits = visitString;
+        ViewBag.visits2 = MiCarritoString;
+
+        HttpContext.Session.SetString("Carrito", MiCarritoString);
+
             
 //        Response.Cookies.Append("Carrito",MiCarritoString);
 
