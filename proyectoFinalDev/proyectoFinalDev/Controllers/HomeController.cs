@@ -27,7 +27,10 @@ public class HomeController : Controller
         int visits = 0 ;
         int.TryParse(visitString, out visits);
         visits++;
-        Response.Cookies.Append("visits",visits.ToString());
+        CookieOptions options = new CookieOptions();
+        options.Expires = DateTime.Now.AddDays(7);
+
+        Response.Cookies.Append("visits",visits.ToString(), options);
 
         ViewBag.visits = visits;
         List<Producto> ListaProductos = new List <Producto>();
