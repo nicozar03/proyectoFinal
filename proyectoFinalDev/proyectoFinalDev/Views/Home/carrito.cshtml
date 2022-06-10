@@ -1,4 +1,12 @@
-public IActionResult insumosComputacion()
-    {
-        return View();
-    }
+@{
+    ViewData["Title"] = "Carrito";
+}
+<h1>Visits:@ViewBag.visits </h1>
+
+@foreach (Producto item in ViewBag.Carrito.ListarProductos())
+{
+    <h1>@item.nombre</h1>
+    <h2>@item.descripcion</h2>
+}
+
+<a href='@Url.Action("AgregarProducto","Home")'>Agregar Producto</a>

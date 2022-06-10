@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using proyectoFinalDev.Models;
 using Microsoft.AspNetCore.Http;
-
+using Newtonsoft.Json;
 
 namespace proyectoFinalDev.Controllers;
 
@@ -23,16 +23,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
 
-        var visitString = Request.Cookies["visits"];
-        int visits = 0 ;
-        int.TryParse(visitString, out visits);
-        visits++;
-        CookieOptions options = new CookieOptions();
-        options.Expires = DateTime.Now.AddDays(7);
 
-        Response.Cookies.Append("visits",visits.ToString(), options);
-
-        ViewBag.visits = visits;
         List<Producto> ListaProductos = new List <Producto>();
         
             
@@ -78,7 +69,53 @@ public class HomeController : Controller
     }
     public IActionResult carrito()
     {
+        var visitString =   Request.Cookies["visits"];
+        Carrito MiCarrito = new Carrito();
+        ViewBag.Carrito = MiCarrito;
+        MiCarrito.Fecha = DateTime.Now;
+
+        
+        string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
+        Response.Cookies.Append("Carrito",MiCarritoString);
+       
+       /* Carrito MiCarrito = Request.Cookies["Carrito"];
+
+        if (MiCarrito==null)
+        {
+            MiCarrito = new Carrito();
+        }
+        */
+        int visits = 0 ;
+        int.TryParse(visitString, out visits);
+        visits++;
+        CookieOptions options = new CookieOptions();
+        options.Expires = DateTime.Now.AddDays(7);
+
+        Response.Cookies.Append("visits",visits.ToString(), options);
+
+        ViewBag.visits = visits;
         return View();
+    }
+
+    public IActionResult AgregarProducto()
+    {
+        var visitString =   Request.Cookies["Carrito"];
+        Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(visitString);
+        MiCarrito.AgregarProducto(new Producto(1,"Papa","DescPApa","foto","Ford",10,10,true));
+
+
+
+        string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
+
+        if (Request.Cookies["Carrito"] != null)
+        {
+            
+        }
+            
+//        Response.Cookies.Append("Carrito",MiCarritoString);
+
+        ViewBag.Carrito = MiCarrito;
+        return View("Carrito");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

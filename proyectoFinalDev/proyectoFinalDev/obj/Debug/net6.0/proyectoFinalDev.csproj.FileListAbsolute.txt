@@ -262,3 +262,4 @@ C:\Users\slipp\Desktop\proyectoFinal\proyectoFinal\proyectoFinalDev\proyectoFina
 C:\Users\slipp\Desktop\proyectoFinal\proyectoFinal\proyectoFinalDev\proyectoFinalDev\obj\Debug\net6.0\proyectoFinalDev.pdb
 C:\Users\slipp\Desktop\proyectoFinal\proyectoFinal\proyectoFinalDev\proyectoFinalDev\obj\Debug\net6.0\proyectoFinalDev.genruntimeconfig.cache
 C:\Users\slipp\Desktop\proyectoFinal\proyectoFinal\proyectoFinalDev\proyectoFinalDev\obj\Debug\net6.0\ref\proyectoFinalDev.dll
+C:\Users\slipp\Desktop\proyectoFinal\proyectoFinal\proyectoFinalDev\proyectoFinalDev\bin\Debug\net6.0\Newtonsoft.Json.dll

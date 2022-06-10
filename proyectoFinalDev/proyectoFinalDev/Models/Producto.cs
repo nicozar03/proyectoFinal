@@ -8,6 +8,7 @@ using Dapper;
 
 namespace proyectoFinalDev.Models
 {
+    [Serializable]
     public class Producto
     {
         private int _idProducto;

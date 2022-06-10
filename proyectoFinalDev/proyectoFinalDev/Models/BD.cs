@@ -32,6 +32,7 @@ namespace proyectoFinalDev.Models
             return UnProducto;
         }
 
+
         /*public static Especialidad ConsultaEspecialidad(int IdEspecialidad){
             Especialidad UnaEspecialidad = null;
             using(SqlConnection db = new SqlConnection(_connectionString)){
