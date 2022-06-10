@@ -482,19 +482,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\slipp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\proyectoFinalDev\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
+      "projectUniqueName": "C:\\Users\\slipp\\Desktop\\proyectoFinal\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
       "projectName": "proyectoFinalDev",
-      "projectPath": "C:\\Users\\user\\Desktop\\proyectoFinalDev\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\proyectoFinalDev\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\obj\\",
+      "projectPath": "C:\\Users\\slipp\\Desktop\\proyectoFinal\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\proyectoFinalDev.csproj",
+      "packagesPath": "C:\\Users\\slipp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\slipp\\Desktop\\proyectoFinal\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\slipp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

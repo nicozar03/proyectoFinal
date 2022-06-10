@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using proyectoFinalDev.Models;
+using Microsoft.AspNetCore.Http;
 
 
 namespace proyectoFinalDev.Controllers;
@@ -21,6 +22,14 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+
+        var visitString = Request.Cookies["visits"];
+        int visits = 0 ;
+        int.TryParse(visitString, out visits);
+        visits++;
+        Response.Cookies.Append("visits",visits.ToString());
+
+        ViewBag.visits = visits;
         List<Producto> ListaProductos = new List <Producto>();
         
             
