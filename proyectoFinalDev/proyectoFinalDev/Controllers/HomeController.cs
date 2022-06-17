@@ -71,7 +71,6 @@ public class HomeController : Controller
     {
         Carrito MiCarrito = new Carrito();
         ViewBag.Carrito = MiCarrito;
-        MiCarrito.Fecha = DateTime.Now;
 
         
         string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
@@ -84,13 +83,13 @@ public class HomeController : Controller
             MiCarrito = new Carrito();
         }
         */
-        int visits = 0 ;
+        /*int visits = 0 ;
         int.TryParse(visits.ToString(), out visits);
         visits++;
         CookieOptions options = new CookieOptions();
         options.Expires = DateTime.Now.AddDays(7);
 
-        Response.Cookies.Append("visits",visits.ToString(), options);
+        Response.Cookies.Append("visits",visits.ToString(), options);*/
 
         return View();
     }
@@ -106,7 +105,7 @@ public class HomeController : Controller
     {
         var visitString =   HttpContext.Session.GetString("Carrito");
         Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(visitString);
-
+    
         MiCarrito.AgregarProducto(new Producto(1,"Papa","DescPApa","foto","Ford",10,10,true));
 
         

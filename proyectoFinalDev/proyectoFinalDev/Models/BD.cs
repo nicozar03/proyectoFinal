@@ -9,7 +9,7 @@ namespace proyectoFinalDev.Models
 {
     public static class BD
     {   
-        private static string _connectionString =  @"Server=LAGERTHA\SQLEXPRESS; DataBase=papeleraVipDatabase;Integrated Security=false; Trusted_Connection=True;";
+        private static string _connectionString =  @"Server=DESKTOP-8625DBK\SQLEXPRESS; DataBase=papeleraVipDatabase;Integrated Security=false; Trusted_Connection=True;";
 
         private static List<Producto> _ListaProducto = new List<Producto> ();
        // private static List<Especialidad> _ListaEspecialidad = new List<Especialidad> ();

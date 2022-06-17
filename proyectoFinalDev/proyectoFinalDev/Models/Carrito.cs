@@ -5,8 +5,8 @@ namespace proyectoFinalDev.Models
 
     public class Carrito
     {
-        public DateTime Fecha;
         public List<Producto> ListaProductos = new List<Producto>();
+        
 
         public void AgregarProducto(Producto Prod)
         {
@@ -21,3 +21,4 @@ namespace proyectoFinalDev.Models
 
     }
 }
+
