@@ -338,6 +338,14 @@ li{
  }
 }
 
+.container-cart{
+ background-color: #fff; 
+ border-radius: 10px;
+}
+.cart-info{
+  display: inline-block;
+}
+
 
 
 
