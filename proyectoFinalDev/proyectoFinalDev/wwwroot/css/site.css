@@ -346,6 +346,10 @@ li{
   display: inline-block;
 }
 
+.cart-img{
+  width: 75px;
+  height: 75px;
+}
 
 
 

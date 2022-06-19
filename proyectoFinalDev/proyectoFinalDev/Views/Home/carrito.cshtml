@@ -1,7 +1,6 @@
 @{
     ViewData["Title"] = "Carrito";
 }
-<h1>Despues Visits:@ViewBag.visits2 </h1>
 
 @foreach (Producto item in ViewBag.Carrito.ListarProductos())
 {
@@ -9,7 +8,7 @@
         <div class="row">
             <div class="col-md-2"></div> 
             <div class="col-md-10">
-                <h5 class="cart-info">@item.foto</h5>
+                <h3><img class='cart-img' src=@item.foto alt=""></h3>
                 <h5 class="cart-info">@item.nombre</h5>
                  <h5 class="cart-info">@item.descripcion</h5>
             </div>
