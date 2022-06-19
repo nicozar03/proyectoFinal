@@ -111,6 +111,12 @@ public class HomeController : Controller
         
         return View("Carrito");
     }
+
+    public IActionResult Pagar(Carrito MiCarrito){
+
+       return View("Pagar"); 
+    }
+
     
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

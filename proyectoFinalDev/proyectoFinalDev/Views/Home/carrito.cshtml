@@ -11,16 +11,41 @@
                 <h3><img class='cart-img' src=@item.foto alt=""></h3>
                 <h5 class="cart-info">@item.nombre</h5>
                  <h5 class="cart-info" style="font-weight: bold;">$@item.precio</h5>
-                 <i class="fa fa-plus-circle fa-color " aria-hidden="true" style="margin-top: 1vh"></i>
-                 <i class="fa fa-minus-circle fa-color" aria-hidden="true"style="margin-top: 1vh"></i>
-                 <i class="fa fa-trash fa-color" aria-hidden="true"style="margin-top: 1vh"></i>
+                 <i class="fa fa-plus-circle fa-3x" aria-hidden="true" style="margin-top: 1vh; color: #1b6ec2"></i>
+                 <i class="fa fa-minus-circle fa-3x" aria-hidden="true"style="margin-top: 1vh; color: orange"></i>
+                 <i class="fa fa-trash fa-3x" aria-hidden="true" style="margin-top: 1vh; color: red"></i>
 
     </div>
 
 }
 
+<div class="container-cart-total">
+    <div class="col-md-12">
+        <div class="row"> 
+            <div class= "col-md-2"></div>      
+            <div class="col-md-8">
+                <h4>TOTAL :</h4>
+            </div>
+            <div class="col-md-2">
+                <h4 id="total">$@(ViewBag.Carrito.PrecioTotal(ViewBag.Carrito.ListaProductos))</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top: 2vh;">
+    <div class="row">
+        <div class="col-md-10"></div>
+        <div class="col-md-2">
+            <a href='@Url.Action("Pagar","Home")'class="btn mt-6" id="btn-buy"> Pagar</a>
+        </div>
+
+    </div>
+
+</div>
+
+
   
-@(ViewBag.Carrito.PrecioTotal(ViewBag.Carrito.ListaProductos))
+
 
 
 
