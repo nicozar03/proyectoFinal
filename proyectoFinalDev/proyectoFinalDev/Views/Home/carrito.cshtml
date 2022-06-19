@@ -19,10 +19,8 @@
 
 }
 
-@foreach (Producto item in ViewBag.Carrito.ListarProductos())
-{ 
-    
-<h3>@(ViewBag.Carrito.PrecioTotal(ViewBag.Carrito.ListaProductos))</h3>
+  
+@(ViewBag.Carrito.PrecioTotal(ViewBag.Carrito.ListaProductos))
 
 
-}
+
