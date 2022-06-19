@@ -72,10 +72,16 @@ public class HomeController : Controller
         Carrito MiCarrito = new Carrito();
         ViewBag.Carrito = MiCarrito;
 
+
         
         string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
         HttpContext.Session.SetString("Carrito", MiCarritoString);
         ViewBag.visits = HttpContext.Session.GetString("Carrito");
+
+    
+
+
+        
 
         return View();
     }
@@ -94,7 +100,6 @@ public class HomeController : Controller
     
         MiCarrito.AgregarProducto(new Producto (idProducto, nombre, descripcion, foto, marca, precio, stock, destacado));
 
-        
         string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
 
         
@@ -103,8 +108,10 @@ public class HomeController : Controller
         HttpContext.Session.SetString("Carrito", MiCarritoString);
 
         ViewBag.Carrito = MiCarrito;
+        
         return View("Carrito");
     }
+    
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

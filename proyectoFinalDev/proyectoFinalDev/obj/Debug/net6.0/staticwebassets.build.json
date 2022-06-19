@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yin6T3BWXUX934otp7aY32BhtVNBKaJJCXJE/YTHteg=",
+  "Hash": "/UeN2jFN03/IE8gdIa9Y9oW/VRXgJw064UqI+ViJW70=",
   "Source": "proyectoFinalDev",
   "BasePath": "_content/proyectoFinalDev",
   "Mode": "Default",
@@ -202,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\carrito.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\proyecto\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\wwwroot\\img\\plus-solid.png",
+      "SourceId": "proyectoFinalDev",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\proyecto\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\wwwroot\\",
+      "BasePath": "_content/proyectoFinalDev",
+      "RelativePath": "img/plus-solid.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\plus-solid.png"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\proyecto\\proyectoFinal\\proyectoFinalDev\\proyectoFinalDev\\wwwroot\\js\\site.js",

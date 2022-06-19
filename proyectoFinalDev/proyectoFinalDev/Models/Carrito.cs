@@ -18,6 +18,16 @@ namespace proyectoFinalDev.Models
             return ListaProductos;
         }
 
+         public float PrecioTotal(List<Producto> ListaProductos){
+            float precioFinal = 0;
+            foreach(Producto item in ListaProductos)
+            {
+                    precioFinal = precioFinal + item.precio ;
+            }
+
+            return precioFinal;
+         }
+
 
     }
 }

@@ -1,6 +1,8 @@
 @{
     ViewData["Title"] = "Carrito";
 }
+<a href='@Url.Action("Index","Home")'><i class="fa fa-arrow-circle-o-left fa-color" aria-hidden="true"></i></a>
+
 
 @foreach (Producto item in ViewBag.Carrito.ListarProductos())
 {
@@ -9,11 +11,18 @@
                 <h3><img class='cart-img' src=@item.foto alt=""></h3>
                 <h5 class="cart-info">@item.nombre</h5>
                  <h5 class="cart-info" style="font-weight: bold;">$@item.precio</h5>
-                 <i class="fa fa-plus-circle " aria-hidden="true" style="margin-top: 1vh"></i>
-                 <i class="fa fa-minus-circle" aria-hidden="true"style="margin-top: 1vh"></i>
-                 <i class="fa fa-trash" aria-hidden="true"style="margin-top: 1vh"></i>
+                 <i class="fa fa-plus-circle fa-color " aria-hidden="true" style="margin-top: 1vh"></i>
+                 <i class="fa fa-minus-circle fa-color" aria-hidden="true"style="margin-top: 1vh"></i>
+                 <i class="fa fa-trash fa-color" aria-hidden="true"style="margin-top: 1vh"></i>
 
     </div>
 
 }
 
+@foreach (Producto item in ViewBag.Carrito.ListarProductos())
+{ 
+    
+<h3>@(ViewBag.Carrito.PrecioTotal(ViewBag.Carrito.ListaProductos))</h3>
+
+
+}
