@@ -341,15 +341,23 @@ li{
 .container-cart{
  background-color: #fff; 
  border-radius: 10px;
+ display: grid;
+ grid-template-columns: auto auto auto;
 }
+
 .cart-info{
   display: inline-block;
+  margin-top: 1vw;
 }
 
 .cart-img{
   width: 75px;
   height: 75px;
+  border-radius: 10px;
+  margin-left: 2vw;
+  
 }
+
 
 
 

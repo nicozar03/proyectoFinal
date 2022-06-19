@@ -4,15 +4,12 @@
 
 @foreach (Producto item in ViewBag.Carrito.ListarProductos())
 {
-    <div class="container-cart">
-        <div class="row">
-            <div class="col-md-2"></div> 
-            <div class="col-md-10">
+    <div class="container-cart" style="margin-bottom:10px;">
+            
                 <h3><img class='cart-img' src=@item.foto alt=""></h3>
                 <h5 class="cart-info">@item.nombre</h5>
-                 <h5 class="cart-info">@item.descripcion</h5>
-            </div>
-        </div>
+                 <h5 class="cart-info" style="font-weight: bold;">$@item.precio</h5>
+            
 
     </div>
 
