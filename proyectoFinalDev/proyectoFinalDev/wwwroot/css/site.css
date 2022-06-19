@@ -342,7 +342,7 @@ li{
  background-color: #fff; 
  border-radius: 10px;
  display: grid;
- grid-template-columns: auto auto auto;
+ grid-template-columns: auto auto auto auto auto auto;
 }
 
 .cart-info{
@@ -357,6 +357,12 @@ li{
   margin-left: 2vw;
   
 }
+
+.input-cart{
+  width: 7vw;
+}
+
+
 
 
 
