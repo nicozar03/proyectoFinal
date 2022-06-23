@@ -19,14 +19,55 @@ namespace proyectoFinalDev.Models
         }
 
          public float PrecioTotal(List<Producto> ListaProductos){
-            float precioFinal = 0;
+           
+           float precioFinal = 0;
+          
             foreach(Producto item in ListaProductos)
-            {
-                    precioFinal = precioFinal + item.precio ;
+            {   
+                     
+                    
+                     precioFinal =  precioFinal + (item.precio * item.cantidad)  ;
             }
+            
 
             return precioFinal;
          }
+
+        
+        public List<Producto> sumarCantidad(int idProducto)
+        {
+            foreach(Producto item in ListaProductos)
+            {
+                if(item.idProducto == idProducto)
+                {
+                    item.cantidad = item.cantidad + 1;
+                }
+            }
+
+            return ListaProductos;
+        }
+
+         public List<Producto> restarCantidad(int idProducto)
+        {
+            foreach(Producto item in ListaProductos)
+            {  
+                if(item.idProducto == idProducto)
+                {
+                    item.cantidad = item.cantidad - 1;
+                  if(item.cantidad==0){
+                Producto productoBorrado = item;
+                ListaProductos.Remove(productoBorrado);
+                }
+                }
+            
+                  
+ 
+        
+                
+            }
+
+            return ListaProductos;
+        }
 
 
     }

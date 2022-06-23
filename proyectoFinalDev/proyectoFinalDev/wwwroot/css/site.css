@@ -343,7 +343,8 @@ li{
  background-color: #fff; 
  border-radius: 10px;
  display: grid;
- grid-template-columns: auto 22vw auto auto auto auto;
+ grid-template-columns: auto 22vw auto auto auto auto auto;
+ 
 }
 
 .container-cart-total{

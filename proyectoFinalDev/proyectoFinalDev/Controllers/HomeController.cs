@@ -24,21 +24,25 @@ public class HomeController : Controller
     {
 
 
-        List<Producto> ListaProductos = new List <Producto>();
-        
-            
-            ListaProductos = BD.ListaProductosDestacados();
-            ViewBag.Producto=ListaProductos;
-           
+        List<Producto> ListaProductos = new List<Producto>();
+
+
+        ListaProductos = BD.ListaProductosDestacados();
+        ViewBag.Producto = ListaProductos;
+
+
+       
+
+
         return View();
     }
-      public IActionResult detalleProductos(int idProducto, string descripcion, string nombre)
+    public IActionResult detalleProductos(int idProducto, string descripcion, string nombre)
     {
         Producto producto;
-        producto=BD.ConsultaProducto(idProducto);
-        ViewBag.Producto=producto;
-        ViewBag.Producto.descripcion=descripcion;
-        ViewBag.Producto.nombre=nombre;
+        producto = BD.ConsultaProducto(idProducto);
+        ViewBag.Producto = producto;
+        ViewBag.Producto.descripcion = descripcion;
+        ViewBag.Producto.nombre = nombre;
 
         return View("detalleProducto");
     }
@@ -46,19 +50,19 @@ public class HomeController : Controller
     {
         return View();
     }
-      public IActionResult insumosComputacion()
+    public IActionResult insumosComputacion()
     {
         return View();
     }
-      public IActionResult libreriaTecnica()
+    public IActionResult libreriaTecnica()
     {
         return View();
     }
-        public IActionResult FAQ()
+    public IActionResult FAQ()
     {
         return View();
     }
-        public IActionResult contacto()
+    public IActionResult contacto()
     {
         return View();
     }
@@ -69,19 +73,20 @@ public class HomeController : Controller
     }
     public IActionResult carrito()
     {
-        Carrito MiCarrito = new Carrito();
+
+            Carrito MiCarrito = new Carrito();
         ViewBag.Carrito = MiCarrito;
 
 
-        
+
         string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
         HttpContext.Session.SetString("Carrito", MiCarritoString);
         ViewBag.visits = HttpContext.Session.GetString("Carrito");
 
-    
 
 
-        
+
+
 
         return View();
     }
@@ -93,31 +98,56 @@ public class HomeController : Controller
         ViewBag.Carrito = new Carrito();
         return View("Carrito");
     }
-    public IActionResult AgregarProducto(int idProducto, string nombre, string descripcion, string foto, string marca, float precio, int stock, bool destacado)
+    public IActionResult AgregarProducto(int idProducto, string nombre, string descripcion, string foto, string marca, float precio, int stock, bool destacado, int cantidad)
     {
-        var visitString =   HttpContext.Session.GetString("Carrito");
+        var visitString = HttpContext.Session.GetString("Carrito");
         Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(visitString);
-    
-        MiCarrito.AgregarProducto(new Producto (idProducto, nombre, descripcion, foto, marca, precio, stock, destacado));
 
+        MiCarrito.AgregarProducto(new Producto(idProducto, nombre, descripcion, foto, marca, precio, stock, destacado, cantidad = 1));
+                        
         string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
 
-        
+
         ViewBag.visits2 = MiCarritoString;
 
         HttpContext.Session.SetString("Carrito", MiCarritoString);
 
         ViewBag.Carrito = MiCarrito;
-        
+
+        return View("Carrito");
+    }
+    public IActionResult SumarCantidad(int idProducto)
+    {
+        var sumarCantidad = HttpContext.Session.GetString("Carrito");
+        Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(sumarCantidad);
+        MiCarrito.sumarCantidad(idProducto);
+        string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
+
+        HttpContext.Session.SetString("Carrito", MiCarritoString);
+        ViewBag.Carrito = MiCarrito;
+
+        return View("Carrito");
+    }
+     public IActionResult RestarCantidad(int idProducto)
+    {
+        var sumarCantidad = HttpContext.Session.GetString("Carrito");
+        Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(sumarCantidad);
+        MiCarrito.restarCantidad(idProducto);
+        string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
+
+        HttpContext.Session.SetString("Carrito", MiCarritoString);
+        ViewBag.Carrito = MiCarrito;
+
         return View("Carrito");
     }
 
-    public IActionResult Pagar(Carrito MiCarrito){
+    public IActionResult Pagar(Carrito MiCarrito)
+    {
 
-       return View("Pagar"); 
+        return View("Pagar");
     }
 
-    
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

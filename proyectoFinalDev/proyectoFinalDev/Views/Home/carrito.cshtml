@@ -11,8 +11,9 @@
                 <h3><img class='cart-img' src=@item.foto alt=""></h3>
                 <h5 class="cart-info">@item.nombre</h5>
                  <h5 class="cart-info" style="font-weight: bold;">$@item.precio</h5>
-                 <i class="fa fa-plus-circle fa-3x" aria-hidden="true" style="margin-top: 1vh; color: #1b6ec2"></i>
-                 <i class="fa fa-minus-circle fa-3x" aria-hidden="true"style="margin-top: 1vh; color: orange"></i>
+               <a href='@Url.Action("SumarCantidad","Home",new{idProducto = item.idProducto})'> <i class="fa fa-plus-circle fa-3x" aria-hidden="true" style="margin-top: 1vh; color: #1b6ec2"></i></a>  
+            <h5 class="cart-info" style="font-weight: bold;">@item.cantidad</h5>
+             <a href='@Url.Action("RestarCantidad","Home",new{idProducto = item.idProducto})'>   <i class="fa fa-minus-circle fa-3x" aria-hidden="true"style="margin-top: 1vh; color: orange"></i> </a> 
                  <i class="fa fa-trash fa-3x" aria-hidden="true" style="margin-top: 1vh; color: red"></i>
 
     </div>

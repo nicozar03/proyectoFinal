@@ -12,11 +12,7 @@
      <h6 class="card-text"> <strong>marca:</strong> @ViewBag.Producto.marca </h6>
      <h6 class="card-text"> <strong>precio</strong> @ViewBag.Producto.precio </h6>
 
-    <a href='@Url.Action("carrito","Home")'>
-    <span class="link-text">
-      COMPRAR
-    </span>
-  </a>
+     <a href='@Url.Action("AgregarProducto","Home", new{idProducto = @ViewBag.Producto.idProducto, nombre = @ViewBag.Producto.nombre, descripcion = @ViewBag.Producto.descripcion, foto= @ViewBag.Producto.foto, marca= @ViewBag.Producto.marca, precio = @ViewBag.Producto.precio, stock=@ViewBag.Producto.stock, destacado =@ViewBag.Producto.destacado ,cantidad = @ViewBag.Producto.cantidad})' class="link-text" id="btn-buy"><span>COMPRAR</span></a>
   </div>
 </section>
                                         
