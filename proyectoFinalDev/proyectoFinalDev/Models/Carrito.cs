@@ -46,30 +46,43 @@ namespace proyectoFinalDev.Models
 
             return ListaProductos;
         }
-
+ List<Producto> listaBorrar = new List<Producto>();
          public List<Producto> restarCantidad(int idProducto)
         {
+          
             foreach(Producto item in ListaProductos)
             {  
                 if(item.idProducto == idProducto)
                 {
                     item.cantidad = item.cantidad - 1;
                   if(item.cantidad==0){
-                Producto productoBorrado = item;
-                ListaProductos.Remove(productoBorrado);
-                }
+                
+                listaBorrar.Add(item);
+                                      }
                 }
             
-                  
- 
-        
-                
             }
+            ListaProductos.RemoveAll(lp => listaBorrar.Any(lb => lb.idProducto == lp.idProducto));
 
             return ListaProductos;
         }
+        public List<Producto> borrarProducto(int idProducto)
+        {
+            foreach(Producto item in ListaProductos)
+            {  
+                if(item.idProducto == idProducto)
+                {
+            
+                listaBorrar.Add(item);
+                                     
+                }
+            
+            }
+            ListaProductos.RemoveAll(lp => listaBorrar.Any(lb => lb.idProducto == lp.idProducto));
 
-
+            return ListaProductos;
+        }
+      
     }
 }
 

@@ -298,3 +298,4 @@ C:\Users\user\Desktop\proyecto\proyectoFinal\proyectoFinalDev\proyectoFinalDev\o
 C:\Users\user\Desktop\proyecto\proyectoFinal\proyectoFinalDev\proyectoFinalDev\obj\Debug\net6.0\proyectoFinalDev.pdb
 C:\Users\user\Desktop\proyecto\proyectoFinal\proyectoFinalDev\proyectoFinalDev\obj\Debug\net6.0\proyectoFinalDev.genruntimeconfig.cache
 C:\Users\user\Desktop\proyecto\proyectoFinal\proyectoFinalDev\proyectoFinalDev\obj\Debug\net6.0\ref\proyectoFinalDev.dll
+C:\Users\devandroid\Desktop\proyecto\proyectoFinal\proyectoFinalDev\proyectoFinalDev\bin\Debug\net6.0\Newtonsoft.Json.dll

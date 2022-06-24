@@ -130,8 +130,8 @@ public class HomeController : Controller
     }
      public IActionResult RestarCantidad(int idProducto)
     {
-        var sumarCantidad = HttpContext.Session.GetString("Carrito");
-        Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(sumarCantidad);
+        var borrarCantidad = HttpContext.Session.GetString("Carrito");
+        Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(borrarCantidad);
         MiCarrito.restarCantidad(idProducto);
         string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
 
@@ -141,6 +141,18 @@ public class HomeController : Controller
         return View("Carrito");
     }
 
+      public IActionResult BorrarProducto(int idProducto)
+    {
+        var sumarCantidad = HttpContext.Session.GetString("Carrito");
+        Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(sumarCantidad);
+        MiCarrito.borrarProducto(idProducto);
+        string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
+
+        HttpContext.Session.SetString("Carrito", MiCarritoString);
+        ViewBag.Carrito = MiCarrito;
+
+        return View("Carrito");
+    }
     public IActionResult Pagar(Carrito MiCarrito)
     {
 

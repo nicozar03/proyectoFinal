@@ -178,7 +178,7 @@ a.text-secondary:hover {
 
 .data{
   font-weight: 640;
-  display: inline-block;
+  text-align: center;
 }
 
 .navbar{
@@ -228,8 +228,9 @@ max-width:100%;
 	transition: all 0.3s ease-out;
 	position: relative;
 	overflow: hidden;
-	height: 100%;
-	width: 45%;
+  max-width: 200px;
+  max-height: 200px;
+
 
 }
 

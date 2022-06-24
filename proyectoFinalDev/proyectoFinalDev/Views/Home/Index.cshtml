@@ -61,8 +61,8 @@
                       <img class="product-image" src="@productos.foto" alt="@productos.foto">
                       </div>
                       <div class="card-body">
-                        <h5> <div class="data">Nombre:</div> &ensp; @productos.nombre</h5>
-                        <h5><div class="data">Precio:</div> &ensp; $@productos.precio </h5>
+                        <h5> <div class="data">@productos.nombre</div> </h5>
+                        <h5><div class="data">$@productos.precio</div> </h5>
                           <div class="button">
                               <a href='@Url.Action("detalleProductos","Home", new{idProducto = productos.idProducto, nombre = productos.nombre, descripcion = productos.descripcion})' class="btn mt-6" id="btn"><span>MÁS INFORMACIÓN</span></a>
                               <a href='@Url.Action("AgregarProducto","Home", new{idProducto = productos.idProducto, nombre = productos.nombre, descripcion = productos.descripcion, foto= productos.foto, marca= productos.marca, precio = productos.precio, stock=productos.stock, destacado =productos.destacado ,cantidad = productos.cantidad})' class="btn mt-6" id="btn-buy"><span>COMPRAR</span></a>
