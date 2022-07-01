@@ -32,6 +32,15 @@ namespace proyectoFinalDev.Models
             return UnProducto;
         }
 
+           public static Producto ConsultaEspecialidad(int idCategoria){
+            Producto UnProducto = null;
+            using(SqlConnection db = new SqlConnection(_connectionString)){
+                string sql="SELECT * from productos WHERE idCategoria = @pidCategoria";
+                UnProducto = db.QueryFirstOrDefault<Producto>(sql, new{pidCategoria = idCategoria});
+            }
+            return UnProducto;
+        }
+
 
         /*public static Especialidad ConsultaEspecialidad(int IdEspecialidad){
             Especialidad UnaEspecialidad = null;

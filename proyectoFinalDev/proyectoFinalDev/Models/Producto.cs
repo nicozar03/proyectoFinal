@@ -21,6 +21,7 @@ namespace proyectoFinalDev.Models
         private bool _destacado;
 
         private int _cantidad;
+        private int _idCategoria;
 
 
         public int idProducto {
@@ -83,9 +84,14 @@ namespace proyectoFinalDev.Models
             }
         }
 
+          public int idCategoria {
+            get { return _idCategoria;}
+            set{
+                _idCategoria= value;
+            }
+        }
 
-
-        public Producto(int idProducto, string nombre, string descripcion, string foto, string marca, float precio, int stock, bool destacado, int cantidad){
+        public Producto(int idProducto, string nombre, string descripcion, string foto, string marca, float precio, int stock, bool destacado, int cantidad, int idCategoria){
             _idProducto =idProducto;
             _nombre=nombre;
             _descripcion=descripcion;
@@ -95,6 +101,7 @@ namespace proyectoFinalDev.Models
             _stock = stock;
             _destacado = destacado;
             _cantidad = cantidad;
+            _idCategoria = idCategoria;
         }
 
         public Producto(){

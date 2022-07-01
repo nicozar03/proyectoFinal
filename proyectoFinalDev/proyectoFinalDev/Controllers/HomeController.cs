@@ -98,12 +98,12 @@ public class HomeController : Controller
         ViewBag.Carrito = new Carrito();
         return View("Carrito");
     }
-    public IActionResult AgregarProducto(int idProducto, string nombre, string descripcion, string foto, string marca, float precio, int stock, bool destacado, int cantidad)
+    public IActionResult AgregarProducto(int idProducto, string nombre, string descripcion, string foto, string marca, float precio, int stock, bool destacado, int cantidad, int idCategoria)
     {
         var visitString = HttpContext.Session.GetString("Carrito");
         Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(visitString);
 
-        MiCarrito.AgregarProducto(new Producto(idProducto, nombre, descripcion, foto, marca, precio, stock, destacado, cantidad = 1));
+        MiCarrito.AgregarProducto(new Producto(idProducto, nombre, descripcion, foto, marca, precio, stock, destacado, cantidad = 1, idCategoria));
                         
         string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
 
