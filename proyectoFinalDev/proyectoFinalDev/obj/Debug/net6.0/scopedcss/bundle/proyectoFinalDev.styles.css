@@ -11,6 +11,10 @@ a.navbar-brand[b-w8eu3m48jx] {
 a[b-w8eu3m48jx] {
   color: #0077cc;
 }
+ul.nav li:hover > ul.dropdown-menu[b-w8eu3m48jx] {
+  display: block;
+}
+
 
 .btn-primary[b-w8eu3m48jx] {
   color: #fff;

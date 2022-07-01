@@ -27,9 +27,19 @@
                             <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <i class="fa-solid fa-cart-shopping"></i>   
-                        <li class="nav-item">
-                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="productos">Productos</a>
-                        </li>
+                        <li class="dropdown nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+
+            <i class="glyphicon glyphicon-user"></i> PRODUCTOS <b class="caret"></b>
+
+          </a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item-active"><a href="#">Sublink 1</a>
+          </li>
+          <li class="dropdown-item-active"><a href="#">Sublink 2</a>
+          </li>
+          <li class="dropdown-item-active"><a href="#">Sublink 3</a>
+          </li>
+        </ul>
                         <li class="nav-item">
                             <a class="nav-link " asp-area="" asp-controller="Home" asp-action="insumosComputacion">insumos Computacion</a>
                         </li>
@@ -42,7 +52,11 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="contacto">Contacto</a>
                         </li>           
-                                                          
+
+                        <ul class="nav navbar-nav ml-auto">
+      
+      </li>
+    </ul>
                     </ul>
                     <button style="background-color:#1190CB; border:none;"> <a class="nav-link" asp-area="" asp-controller="Home" asp-action="carrito"><i class="fa fa-shopping-cart" style= "font-size:36px;color:white"></i></a> </button>
                    

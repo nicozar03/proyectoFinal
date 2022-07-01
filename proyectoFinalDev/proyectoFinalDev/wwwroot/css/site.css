@@ -7,6 +7,7 @@ html {
   font-size: 14px;
 }
 
+
 body{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
@@ -213,7 +214,9 @@ a.text-secondary:hover {
 .navbar ul li a:hover,
 .navbar .dd_menu ul li a:hover,
 .navbar .dd_menu ul li a.active{
-	background: #102770;
+	background-color  : #102770;
+  color:red;
+  background: #102770;
 }
 
 .img-fluid{

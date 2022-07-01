@@ -10,6 +10,10 @@ a.navbar-brand {
 a {
   color: #0077cc;
 }
+ul.nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+
 
 .btn-primary {
   color: #fff;
