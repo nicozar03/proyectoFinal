@@ -46,13 +46,13 @@ public class HomeController : Controller
 
         return View("detalleProducto");
     }
-    public IActionResult productos(int idCategoria)
+    public IActionResult productos(int idCategoria, int idProducto)
     {
         Producto producto;
         producto=BD.ConsultaEspecialidad(idCategoria);
         ViewBag.Producto = producto;
         
-        return View();
+        return View("productos");
     }
     public IActionResult insumosComputacion()
     {
