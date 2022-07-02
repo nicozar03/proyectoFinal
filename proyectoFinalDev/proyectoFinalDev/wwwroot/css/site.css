@@ -225,6 +225,7 @@ ul li ul {
   transition: opacity 0.2s, visibility 0.2s;
 }
 ul li ul li {
+  margin: -2px 0 0 -2px;
   line-height: 1.7;
 }
 ul li ul li a {
