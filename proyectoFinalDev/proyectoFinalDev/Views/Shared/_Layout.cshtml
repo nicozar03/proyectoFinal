@@ -23,41 +23,65 @@
                 </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <i class="fa-solid fa-cart-shopping"></i>   
-                        <li class="dropdown nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-
-            <i class="glyphicon glyphicon-user"></i> PRODUCTOS <b class="caret"></b>
-
-          </a>
-        <ul class="dropdown-menu">
-          <li class="dropdown-item-active"><a href="#">Sublink 1</a>
-          </li>
-          <li class="dropdown-item-active"><a href="#">Sublink 2</a>
-          </li>
-          <li class="dropdown-item-active"><a href="#">Sublink 3</a>
-          </li>
+    <li><a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+    <li>
+     <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Productos">Productos</a>
+      <ul>
+        <div class="container">
+            <div class="row">
+                <li><a href="#0">Cuadernos</a></li>
+                  <li><a href="#0">Lapices</a></li>  
+                    <li><a href="#0">Lapiceras</a></li>
+                   <li><a href="#0">resaltadores</a></li> 
+                  <li><a href="#0">marcadores</a></li>  
+                    <li><a href="#0">hojas</a></li>
+                    <li><a href="#0">cartulinas</a></li>
+                     <li><a href="#0">reglas</a></li>
+                   <li><a href="#0">tijeras</a></li> 
+                  <li><a href="#0">gomas</a></li>  
+                 <li><a href="#0">adhesivos</a></li>   
+                  
+                  </div>
+        </div>
         </ul>
-                        <li class="nav-item">
-                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="insumosComputacion">insumos Computacion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="libreriaTecnica">Libreria Tecnica</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a>
-                        </li> 
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="contacto">Contacto</a>
-                        </li>           
+         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+     
+    </li>
+    <li>
+       <a class="nav-link " asp-area="" asp-controller="Home" asp-action="insumosComputacion">insumos Computacion</a>
+      <ul>
+        <li><a href="#0">Print Design</a></li>
+        <li><a href="#0">Web Design</a></li>
+        <li><a href="#0">Mobile App Development</a></li>
+      </ul>
+    </li>
+    <li>
+       <a class="nav-link " asp-area="" asp-controller="Home" asp-action="libreriaTecnica">Libreria Técnica</a>
+      <ul>
+        <li><a href="#0">Cuadernos</a></li>
+        <li><a href="#0">Lapices</a></li>
+        <li><a href="#0">reglas</a></li>
+        <li><a href="#0">Lapiceras</a></li>
+      </ul>
+    </li>
+    <li><a class="nav-link" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a></li>
+    <li><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contacto">Contacto</a></li>
 
-                        <ul class="nav navbar-nav ml-auto">
+  </ul>
+
       
       </li>
     </ul>
-                    </ul>
                     <button style="background-color:#1190CB; border:none;"> <a class="nav-link" asp-area="" asp-controller="Home" asp-action="carrito"><i class="fa fa-shopping-cart" style= "font-size:36px;color:white"></i></a> </button>
                    
                 </div>
